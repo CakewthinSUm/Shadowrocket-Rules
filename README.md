@@ -1,4 +1,4 @@
-> 如需Clash版本 → [请点击此处](https://github.com/LingJingMaster/Clash-Rules)
+> 如需 Clash 版本 → [请点击此处](https://github.com/LingJingMaster/Clash-Rules)
 
 ---
 
@@ -12,7 +12,7 @@
 ## 快速开始
 
 1. 复制配置文件的 Raw 链接：
-   `https://raw.githubusercontent.com/LingJingMaster/Shadowrocket-Rules/refs/heads/main/Shadowrocket.conf`
+   `https://raw.githubusercontent.com/CakewthinSUm/Shadowrocket-Rules/refs/heads/main/Shadowrocket.conf`
 2. 打开 Shadowrocket → 配置 → 右上角 `+` → 粘贴链接 → 下载
 3. 点击已下载的配置，设为使用中（✔️）
 4. 首页添加你自己的节点或订阅
@@ -20,7 +20,7 @@
 
 或者扫描二维码
 
-<img width="200" height="200" alt="ctool-2026-02-26-17-13-16" src="https://github.com/user-attachments/assets/22f1b4f7-3265-493c-9e5a-2b662924ed2f" />
+<img width="200" height="200" alt="Shadowrocket 配置二维码" src="shadowrocket-config-qr.svg" />
 
 ## 分流规则
 
@@ -52,16 +52,22 @@
 | 服务 | 默认策略 | 可选策略 |
 |------|----------|----------|
 | 🧱 DNS 防泄露 | REJECT | 节点选择、DIRECT |
-| 📧 邮件服务 | PROXY | DIRECT、节点选择、日本节点、香港节点 |
-| 🔍 谷歌服务 | 🇯🇵 日本节点 | 🇭🇰 香港节点、节点选择、PROXY、DIRECT |
-| 🤖 AI 服务 | 🇺🇸 美国节点 | 节点选择、PROXY、DIRECT |
-| 🍎 苹果推送 | 🚀 节点选择 | PROXY、DIRECT |
-| 🍏 苹果服务 | DIRECT | 节点选择、PROXY |
-| 🏦 汇丰香港 | DIRECT | 🇭🇰 香港节点、节点选择、PROXY |
-| 🏦 香港银行 | DIRECT | 香港节点、节点选择、PROXY |
-| 📈 券商服务 | 🇭🇰 香港节点 | DIRECT、节点选择、PROXY |
-| 🌍 非中国 | PROXY | 节点选择、DIRECT、日本节点 |
-| 🐟 漏网之鱼 | PROXY | 节点选择、DIRECT、日本节点 |
+| 📧 邮件服务 | PROXY | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🔍 谷歌服务 | 🇯🇵 日本节点 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🤖 AI 服务 | 🇺🇸 美国节点 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 📹 油管视频 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| Ⓜ️ 微软服务 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🍎 苹果推送 | 🚀 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🍏 苹果服务 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 📲 电报消息 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🐱 代码托管 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🏦 汇丰香港 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🏦 香港银行 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 📈 券商服务 | 🇭🇰 香港节点 | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🏠 私有网络 | DIRECT | DIRECT、节点选择、REJECT、所有地区节点 |
+| 🔒 国内服务 | DIRECT | DIRECT、节点选择、REJECT、所有地区节点 |
+| 🌍 非中国 | PROXY | PROXY、节点选择、DIRECT、REJECT、所有地区节点 |
+| 🐟 漏网之鱼 | PROXY | PROXY、节点选择、DIRECT、REJECT、所有地区节点 |
 
 
 
@@ -80,7 +86,7 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/chart?repos=lingjingmaster/shadowrocket-rules&type=date&legend=top-left)](https://www.star-history.com/?repos=lingjingmaster%2Fshadowrocket-rules&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/chart?repos=cakewthinsum/shadowrocket-rules&type=date&legend=top-left)](https://www.star-history.com/?repos=cakewthinsum%2Fshadowrocket-rules&type=date&legend=top-left)
 
 ## License
 
