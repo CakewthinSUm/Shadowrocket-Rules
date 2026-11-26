@@ -52,16 +52,22 @@
 | 服务 | 默认策略 | 可选策略 |
 |------|----------|----------|
 | 🧱 DNS 防泄露 | REJECT | 节点选择、DIRECT |
-| 📧 邮件服务 | PROXY | DIRECT、节点选择、日本节点、香港节点 |
-| 🔍 谷歌服务 | 🇯🇵 日本节点 | 🇭🇰 香港节点、节点选择、PROXY、DIRECT |
-| 🤖 AI 服务 | 🇺🇸 美国节点 | 节点选择、PROXY、DIRECT |
-| 🍎 苹果推送 | 🚀 节点选择 | PROXY、DIRECT |
-| 🍏 苹果服务 | DIRECT | 节点选择、PROXY |
-| 🏦 汇丰香港 | DIRECT | 🇭🇰 香港节点、节点选择、PROXY |
-| 🏦 香港银行 | DIRECT | 香港节点、节点选择、PROXY |
-| 📈 券商服务 | 🇭🇰 香港节点 | DIRECT、节点选择、PROXY |
-| 🌍 非中国 | PROXY | 节点选择、DIRECT、日本节点 |
-| 🐟 漏网之鱼 | PROXY | 节点选择、DIRECT、日本节点 |
+| 📧 邮件服务 | PROXY | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🔍 谷歌服务 | 🇯🇵 日本节点 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🤖 AI 服务 | 🇺🇸 美国节点 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 📹 油管视频 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| Ⓜ️ 微软服务 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🍎 苹果推送 | 🚀 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🍏 苹果服务 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 📲 电报消息 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🐱 代码托管 | 节点选择 | 节点选择、PROXY、DIRECT、REJECT、所有地区节点 |
+| 🏦 汇丰香港 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🏦 香港银行 | DIRECT | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 📈 券商服务 | 🇭🇰 香港节点 | DIRECT、节点选择、PROXY、REJECT、所有地区节点 |
+| 🏠 私有网络 | DIRECT | DIRECT、节点选择、REJECT、所有地区节点 |
+| 🔒 国内服务 | DIRECT | DIRECT、节点选择、REJECT、所有地区节点 |
+| 🌍 非中国 | PROXY | PROXY、节点选择、DIRECT、REJECT、所有地区节点 |
+| 🐟 漏网之鱼 | PROXY | PROXY、节点选择、DIRECT、REJECT、所有地区节点 |
 
 
 
